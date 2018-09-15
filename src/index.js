@@ -1,7 +1,14 @@
+// react
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+
+// redux
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
+
+// connect redux to react
 import { connect, Provider } from 'react-redux';
+
+// thunk middleware
 import thunk from 'redux-thunk';
 
 // actions
