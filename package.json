@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "react-scripts build && npm run create-cname",
+    "create-cname": "echo 'single-file-redux.surge.sh' > build/CNAME",
+    "deploy": "npm run build && surge build",
+    "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom"
   },
   "dependencies": {
     "react": "^16.4.1",
